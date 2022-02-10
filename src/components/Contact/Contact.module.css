@@ -1,0 +1,42 @@
+.mainContainer {
+  max-width: 1600px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactMe {
+  /* margin: auto; */
+}
+
+.contactMe_sub1 {
+  height: 116px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub2 {
+  height: 110px;
+}
+
+.copyrightContainer {
+  width: 1600px;
+  margin: auto;
+  height: 192px;
+  margin-top: 105px;
+  text-align: center;
+}
+
+.border {
+  max-width: 1600px;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 45px;
+}
+
+.rights {
+  display: inline-block;
+}

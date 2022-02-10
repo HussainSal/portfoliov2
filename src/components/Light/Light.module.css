@@ -1,0 +1,10 @@
+.light {
+  width: 729.63px;
+  height: 729.63px;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #00ffe0 0deg,
+    #7000ff 360deg
+  );
+  transform: rotate(-108.84deg);
+}

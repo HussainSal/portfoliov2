@@ -1,0 +1,32 @@
+.nav {
+  align-items: center;
+  margin: auto;
+  height: 85px;
+  align-items: flex-end;
+}
+
+.navOptions {
+  width: 461px;
+}
+
+.socialmediaOptions {
+  width: 157px;
+  z-index: 100;
+}
+
+.link > svg {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.link > svg:hover {
+  transform: scale(1.15);
+}
+
+.socialApp {
+  transition: all 0.3;
+}
+
+.socialApp:hover {
+  transform: translateY(-5px);
+}
