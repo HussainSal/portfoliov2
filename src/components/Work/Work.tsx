@@ -6,13 +6,14 @@ import Projectcontainerleft from "../Projectcontainer/Projectcontainerleft";
 import Projectcontainerright from "../Projectcontainer/Projectcontainerright";
 import { projectData } from "../../assets/projectText";
 import Light from "../Light/Light";
+import classes from "./Work.module.css";
 
 const Work = () => {
   return (
     <section id="work" className="section work">
       <div className="mainContainer">
         <Typography
-          className="styledText"
+          className={`${classes.heading} styledText`}
           style={{ marginBottom: "150px" }}
           variant="h3"
         >

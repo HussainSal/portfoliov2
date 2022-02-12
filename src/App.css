@@ -1,5 +1,6 @@
 .App {
   margin: auto;
+  /* overflow-x: hidden; */
 }
 
 .flex {
@@ -8,7 +9,7 @@
 }
 
 .mainContainer {
-  max-width: 1600px;
+  max-width: 1400px;
   margin: auto;
   text-align: left;
 }
@@ -22,3 +23,10 @@
 .about {
   margin-bottom: 200px;
 }
+
+/* @media (max-width: 1464px) {
+  .mainContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+} */

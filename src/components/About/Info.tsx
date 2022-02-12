@@ -1,12 +1,14 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 import img1 from "../../assets/projectsImages/frame.png";
+import img2 from "../../assets/projectsImages/framemobile.png";
+
 import classes from "./About.module.css";
 
 const Info = () => {
   return (
     <div className={classes.aboutmeContainer}>
-      <img src={img1} width="800px" height="500px" alt="" />
+      <img src={img1} className={classes.image} alt="" />
       <div className={classes.aboutmeText}>
         <div className={classes.text}>
           <Typography color="primary">
@@ -45,9 +47,9 @@ const Info = () => {
             <span className={classes.aboutme}>.Skills </span>
             {"["}
           </Typography>
-          <Typography color="primary">
-            Html5, Css, Javascript, Typescript, GSAP, React, Material-UI, Redux,
-            {<br />} NextJs, RestAPI, Firebase
+          <Typography className={classes.skillText} color="primary">
+            Html5, Css, Javascript, Typescript, GSAP, React, Material-UI,{" "}
+            {<br />} Redux, NextJs, RestAPI, Firebase
           </Typography>
           <Typography color="primary">{"]"}</Typography>
         </div>

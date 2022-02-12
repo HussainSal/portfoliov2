@@ -30,3 +30,24 @@
 .socialApp:hover {
   transform: translateY(-5px);
 }
+
+@media (max-width: 1464px) {
+  .navOptions {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .socialmediaOptions {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navOptions {
+    display: none;
+  }
+  .socialmediaOptions {
+    margin: auto;
+    padding-right: 0px;
+  }
+}

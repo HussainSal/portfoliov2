@@ -8,16 +8,31 @@ const theme = createTheme({
       fontWeight: "700",
       lineHeight: "108px",
       letterSpacing: "5.5%",
+      "@media (max-width:640px)": {
+        fontSize: "42px",
+        fontWeight: "500",
+        lineHeight: "88px",
+      },
     },
     h2: {
       fontSize: "64px",
       fontWeight: "700",
       lineHeight: "96px",
+      "@media (max-width:640px)": {
+        fontSize: "32px",
+        fontWeight: "500",
+        lineHeight: "78px",
+      },
     },
     h3: {
       fontSize: "64px",
       fontWeight: "400",
       lineHeight: "96px",
+      "@media (max-width:640px)": {
+        fontSize: "28px",
+        fontWeight: "400",
+        lineHeight: "88px",
+      },
     },
     h4: {
       fontSize: "36px",
@@ -28,6 +43,11 @@ const theme = createTheme({
       fontSize: "24px",
       fontWeight: "500",
       lineHeight: "36px",
+      "@media (max-width:640px)": {
+        fontSize: "18px",
+        fontWeight: "400",
+        lineHeight: "36px",
+      },
     },
     body1: {
       fontSize: "18px",

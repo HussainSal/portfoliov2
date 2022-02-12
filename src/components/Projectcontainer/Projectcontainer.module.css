@@ -12,7 +12,7 @@
 
 .Projectcontainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 120px;
 }
 
@@ -34,4 +34,80 @@
 .arrowForward {
   color: #0ee6b7;
   margin-left: 20px;
+}
+
+.textHeading {
+  margin-bottom: 18px !important;
+  margin-top: 49px !important;
+}
+
+.image {
+  max-width: 800px;
+  height: 500px;
+}
+
+@media (max-width: 1464px) {
+  .Projectcontainer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .textboxLeft {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Projectcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .image {
+    max-width: 500px;
+    height: 380px;
+  }
+
+  .imageBox {
+    width: 500px;
+  }
+}
+
+@media (max-width: 650px) {
+  .image {
+    max-width: 500px;
+    height: 380px;
+  }
+
+  .imageBox {
+    width: 500px;
+  }
+
+  .textbox {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .image {
+    max-width: 300px;
+    height: 260px;
+  }
+
+  .imageBox {
+    width: 300px;
+  }
+
+  .textbox {
+    max-width: 400px;
+  }
 }

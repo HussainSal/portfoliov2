@@ -2,15 +2,8 @@ import React from "react";
 import classes from "./Projectcontainer.module.css";
 import "../../App.css";
 import { Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link } from "@material-ui/core";
-
-const useStyle = makeStyles({
-  textHeading: {
-    marginBottom: "17px",
-  },
-});
 
 const Projectcontainerleft: React.FC<{
   name: string;
@@ -18,46 +11,42 @@ const Projectcontainerleft: React.FC<{
   sitelink: string;
   image: string;
 }> = (props) => {
-  const style = useStyle();
-
   return (
-    <section>
-      <div className="mainContainer">
-        <div className={classes.Projectcontainer}>
-          <div className={classes.imageBox}>
-            <img src={props.image} width="600px" height="380px" alt="" />
-          </div>
-          <div className={classes.textbox}>
-            <Typography
-              className={style.textHeading}
-              color="primary"
-              variant="h4"
+    <div className="mainContainer">
+      <div className={classes.Projectcontainer}>
+        <div className={classes.imageBox}>
+          <img src={props.image} className={classes.image} alt="" />
+        </div>
+        <div className={`${classes.textbox} ${classes.textboxLeft}`}>
+          <Typography
+            className={classes.textHeading}
+            color="primary"
+            variant="h4"
+          >
+            {props.name}
+          </Typography>
+          <Typography color="primary" variant="body1">
+            {props.text}
+          </Typography>
+          <div className={classes.visitProject}>
+            <Link
+              href={props.sitelink}
+              target="_blank"
+              style={{ textDecoration: "none" }}
             >
-              {props.name}
-            </Typography>
-            <Typography color="primary" variant="body1">
-              {props.text}
-            </Typography>
-            <div className={classes.visitProject}>
-              <Link
-                href={props.sitelink}
-                target="_blank"
-                style={{ textDecoration: "none" }}
+              <Typography
+                color="secondary"
+                className={classes.seeProject}
+                variant="subtitle1"
               >
-                <Typography
-                  color="secondary"
-                  className={classes.seeProject}
-                  variant="subtitle1"
-                >
-                  See Project
-                </Typography>
-              </Link>
-              <ArrowForwardIcon className={classes.arrowForward} />
-            </div>
+                See Project
+              </Typography>
+            </Link>
+            <ArrowForwardIcon className={classes.arrowForward} />
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

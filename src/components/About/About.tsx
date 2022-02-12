@@ -10,7 +10,7 @@ const About = () => {
     <section id="about me" className="section about">
       <div className={`${classes.aboutSection} mainContainer`}>
         <Typography
-          className="styledText"
+          className={`${classes.heading} styledText`}
           style={{ marginBottom: "150px" }}
           variant="h3"
         >

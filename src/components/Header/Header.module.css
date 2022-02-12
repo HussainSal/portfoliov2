@@ -5,3 +5,9 @@
 .header {
   margin-bottom: 300px;
 }
+
+@media (max-width: 1464px) {
+  .mainHeading {
+    padding-left: 50px;
+  }
+}

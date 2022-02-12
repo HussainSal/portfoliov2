@@ -18,3 +18,47 @@
 .text {
   margin-bottom: 20px;
 }
+
+.image {
+  max-width: 800px;
+  height: 500px;
+}
+
+@media (max-width: 1464px) {
+  .heading {
+    padding-left: 50px;
+  }
+
+  .aboutmeContainer {
+    padding-left: 50px;
+  }
+
+  .aboutmeText {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 880px) {
+  .image {
+    max-width: 600px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 650px) {
+  .image {
+    max-width: 500px;
+    height: 600px;
+  }
+
+  .skillText {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 540px) {
+  .image {
+    max-width: 420px;
+    height: 600px;
+  }
+}
