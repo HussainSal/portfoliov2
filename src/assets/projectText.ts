@@ -3,7 +3,14 @@ import img2 from "../assets/projectsImages/project2.png";
 import img3 from "../assets/projectsImages/project3.png";
 import img4 from "../assets/projectsImages/project4.png";
 
-export const projectData = [
+export const projectData: {
+  name: string;
+  description: string;
+  image: string;
+  githubLink: string;
+  siteLink: string;
+  technoUsed: string[];
+}[] = [
   {
     name: "Movie App",
     description:

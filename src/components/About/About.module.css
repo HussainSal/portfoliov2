@@ -24,6 +24,10 @@
   height: 500px;
 }
 
+.heading {
+  margin-bottom: 150px !important;
+}
+
 @media (max-width: 1464px) {
   .heading {
     padding-left: 50px;
@@ -39,6 +43,10 @@
 }
 
 @media (max-width: 880px) {
+  .aboutmeContainer {
+    padding-left: 50px;
+  }
+
   .image {
     max-width: 600px;
     height: 500px;
@@ -46,6 +54,16 @@
 }
 
 @media (max-width: 650px) {
+  .aboutmeContainer {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+  }
+
+  .aboutmeText {
+    padding-left: 65px;
+  }
+
   .image {
     max-width: 500px;
     height: 600px;
@@ -54,11 +72,37 @@
   .skillText {
     max-width: 400px;
   }
+
+  .heading {
+    margin-bottom: 50px !important;
+  }
 }
 
 @media (max-width: 540px) {
   .image {
     max-width: 420px;
     height: 600px;
+  }
+}
+
+@media (max-width: 490px) {
+  .image {
+    max-width: 320px;
+    height: 650px;
+  }
+
+  .skillText {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 386px) {
+  .aboutmeText {
+    padding-left: 30px;
+  }
+
+  .image {
+    max-width: 305px;
+    height: 650px;
   }
 }

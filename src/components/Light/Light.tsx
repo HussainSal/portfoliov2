@@ -1,8 +1,6 @@
 import React from "react";
 import classes from "./Light.module.css";
 
-//   filter: blur(400px);
-
 const Light: React.FC<{ left: string; top: string; blur: string }> = (
   props
 ) => {

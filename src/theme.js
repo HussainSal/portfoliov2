@@ -13,6 +13,11 @@ const theme = createTheme({
         fontWeight: "500",
         lineHeight: "88px",
       },
+      "@media (max-width:440px)": {
+        fontSize: "25px",
+        fontWeight: "500",
+        lineHeight: "78px",
+      },
     },
     h2: {
       fontSize: "64px",
@@ -22,6 +27,11 @@ const theme = createTheme({
         fontSize: "32px",
         fontWeight: "500",
         lineHeight: "78px",
+      },
+      "@media (max-width:440px)": {
+        fontSize: "25px",
+        fontWeight: "500",
+        lineHeight: "68px",
       },
     },
     h3: {
@@ -48,11 +58,21 @@ const theme = createTheme({
         fontWeight: "400",
         lineHeight: "36px",
       },
+      "@media (max-width:486px)": {
+        fontSize: "11px",
+        fontWeight: "400",
+        lineHeight: "36px",
+      },
     },
     body1: {
       fontSize: "18px",
       fontWeight: "400",
       lineHeight: "27px",
+      "@media (max-width:486px)": {
+        fontSize: "16px",
+        fontWeight: "400",
+        lineHeight: "24px",
+      },
     },
     body2: {
       fontSize: "16px",

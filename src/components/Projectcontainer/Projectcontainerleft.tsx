@@ -10,10 +10,11 @@ const Projectcontainerleft: React.FC<{
   text: string;
   sitelink: string;
   image: string;
+  class: string;
 }> = (props) => {
   return (
     <div className="mainContainer">
-      <div className={classes.Projectcontainer}>
+      <div className={`${classes.Projectcontainer} ${props.class}  `}>
         <div className={classes.imageBox}>
           <img src={props.image} className={classes.image} alt="" />
         </div>

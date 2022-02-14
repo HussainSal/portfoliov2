@@ -1,5 +1,25 @@
+.heading {
+  margin-bottom: 150px !important;
+}
+
+.reverseRow {
+  flex-direction: row-reverse;
+}
+
 @media (max-width: 1464px) {
   .heading {
     padding-left: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .reverseRow {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .heading {
+    margin-bottom: 80px !important;
   }
 }

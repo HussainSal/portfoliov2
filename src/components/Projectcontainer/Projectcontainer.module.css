@@ -52,7 +52,7 @@
     padding-right: 50px;
   }
 
-  .textboxLeft {
+  .textbox {
     padding-left: 50px;
   }
 }
@@ -80,17 +80,6 @@
   .imageBox {
     width: 500px;
   }
-}
-
-@media (max-width: 650px) {
-  .image {
-    max-width: 500px;
-    height: 380px;
-  }
-
-  .imageBox {
-    width: 500px;
-  }
 
   .textbox {
     max-width: 500px;
@@ -99,15 +88,17 @@
 
 @media (max-width: 540px) {
   .image {
-    max-width: 300px;
-    height: 260px;
+    max-width: 290px;
+    height: 290px;
   }
 
   .imageBox {
-    width: 300px;
+    width: 290px;
+    height: 240px;
   }
 
   .textbox {
-    max-width: 400px;
+    max-width: 290px;
+    padding-left: 0px;
   }
 }
