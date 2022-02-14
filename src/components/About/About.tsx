@@ -16,7 +16,7 @@ const About = () => {
         >
           About Me
         </Typography>
-        {/* <Light top="60%" left="90%" blur="blur(500px)" /> */}
+        <Light top="60%" left="90%" blur="blur(500px)" />
         <Info />
       </div>
     </section>

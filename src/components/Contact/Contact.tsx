@@ -37,7 +37,7 @@ const Contact = () => {
           2022 - All rights reserved
         </Typography>
       </div>
-      {/* <Light top="400%" left="-20%" blur="blur(400px)" /> */}
+      <Light top="400%" left="-20%" blur="blur(400px)" />
     </section>
   );
 };
