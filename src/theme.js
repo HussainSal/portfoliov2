@@ -78,6 +78,11 @@ const theme = createTheme({
       fontSize: "16px",
       fontWeight: "400",
       lineHeight: "24px",
+      "@media (max-width:400px)": {
+        fontSize: "12px",
+        fontWeight: "400",
+        lineHeight: "24px",
+      },
     },
   },
   palette: {

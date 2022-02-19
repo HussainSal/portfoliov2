@@ -3,21 +3,18 @@ import React from "react";
 import "../../App.css";
 import { Typography } from "@material-ui/core";
 import Projectcontainerleft from "../Projectcontainer/Projectcontainerleft";
-// import Projectcontainerright from "../Projectcontainer/Projectcontainerright";
-// import Light from "../Light/Light";
 import { projectData } from "../../assets/projectText";
 import classes from "./Work.module.css";
-// import { useAppContext } from "../../store/authContext";
+import Light from "../Light/Light";
 
 const Work = () => {
-  // const ctx = useAppContext();
-
   return (
     <section id="work" className="section work">
       <div className="mainContainer">
         <Typography className={`${classes.heading} styledText`} variant="h3">
           Latest Work
         </Typography>
+        <Light top="30%" left="90%" blur="blur(500px)" />
 
         {projectData.map((item, i) => {
           return (

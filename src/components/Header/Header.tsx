@@ -7,7 +7,7 @@ import "../../App.css";
 const Header = () => {
   return (
     <header className={`${classes.header} section`}>
-      <Light top="-15%" left="70%" blur="blur(350px)" />
+      <Light top="-10%" left="70%" blur="blur(350px)" />
       <div className={`${classes.mainHeading} mainContainer`}>
         <Typography variant="h3" color="secondary">
           Hello!

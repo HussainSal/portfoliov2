@@ -1,6 +1,7 @@
 .App {
   margin: auto;
-  /* overflow-x: hidden; */
+  position: relative;
+  overflow-x: hidden;
 }
 
 .flex {

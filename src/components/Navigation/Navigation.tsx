@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Navigation.module.css";
-import { Button } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import "../../App.css";
 import SocialAccounts from "./SocialAccounts";
 
@@ -21,7 +21,7 @@ const Navigation = () => {
                 color="primary"
                 key={cur}
               >
-                {cur}
+                <Typography variant="body2">{cur}</Typography>
               </Button>
             );
           })}
@@ -30,7 +30,7 @@ const Navigation = () => {
             target="_blank"
             color="primary"
           >
-            resume
+            <Typography variant="body2">Resume</Typography>
           </Button>
         </div>
         <SocialAccounts />
