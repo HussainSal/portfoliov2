@@ -16,9 +16,11 @@ const Header = () => {
           Salman Hussain
         </Typography>
 
-        <Typography variant="h1" className="styledText">
-          frontend developer.
-        </Typography>
+        <div>
+          <Typography variant="h1" className="styledText">
+            frontend developer.
+          </Typography>
+        </div>
       </div>
       <Light top="70%" left="0%" blur="blur(600px)" />
     </header>
