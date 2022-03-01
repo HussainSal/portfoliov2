@@ -16,7 +16,7 @@
 }
 
 .text {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .image {
@@ -58,10 +58,7 @@
     display: flex;
     justify-content: center;
     padding-left: 0px;
-  }
-
-  .aboutmeText {
-    padding-left: 65px;
+    height: 460px;
   }
 
   .image {
@@ -76,6 +73,13 @@
   .heading {
     margin-bottom: 50px !important;
   }
+
+  .aboutmeText {
+    padding-left: 65px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+  }
 }
 
 @media (max-width: 540px) {
@@ -83,12 +87,18 @@
     max-width: 420px;
     height: 600px;
   }
+
+  .aboutmeText {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+  }
 }
 
 @media (max-width: 490px) {
   .image {
     max-width: 320px;
-    height: 650px;
+    height: 550px;
   }
 
   .skillText {
@@ -103,6 +113,5 @@
 
   .image {
     max-width: 305px;
-    height: 650px;
   }
 }

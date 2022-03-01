@@ -6,9 +6,9 @@ import Twitter from "../../assets/icons/Twitter";
 import "../../App.css";
 import { Link } from "@material-ui/core";
 
-const SocialAccounts = () => {
+const SocialAccounts: React.FC<{ className: string }> = (props) => {
   return (
-    <div className={`${classes.socialmediaOptions} flex`}>
+    <div className={`${classes.socialmediaOptions} ${props.className} flex`}>
       <Link
         className={classes.link}
         href="https://www.linkedin.com/in/salman-hussain-a92867194/"

@@ -8,10 +8,6 @@
   justify-content: space-between;
 }
 
-.contactMe {
-  /* margin: auto; */
-}
-
 .contactMe_sub1 {
   height: 116px;
   flex-direction: column;
@@ -39,4 +35,15 @@
 
 .rights {
   display: inline-block;
+}
+
+.socialMediaOptions {
+  display: block;
+  display: flex;
+}
+
+@media (max-width: 642px) {
+  .mainContainer {
+    height: 250px;
+  }
 }

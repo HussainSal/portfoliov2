@@ -13,7 +13,7 @@ const Contact = () => {
             <Typography color="primary" variant="subtitle1">
               I would like to have your contact!
             </Typography>
-            <SocialAccounts />
+            <SocialAccounts className={classes.socialMediaOptions} />
           </div>
         </div>
         <div className={`${classes.contactMe_sub1} ${classes.sub2} flex`}>

@@ -33,7 +33,7 @@ const Navigation = () => {
             <Typography variant="body2">Resume</Typography>
           </Button>
         </div>
-        <SocialAccounts />
+        <SocialAccounts className="" />
       </div>
     </nav>
   );

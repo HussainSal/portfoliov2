@@ -1,5 +1,4 @@
 import React from "react";
-
 import "../../App.css";
 import { Typography } from "@material-ui/core";
 import Projectcontainerleft from "../Projectcontainer/Projectcontainerleft";

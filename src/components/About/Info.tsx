@@ -4,6 +4,7 @@ import img1 from "../../assets/projectsImages/frame.png";
 import img2 from "../../assets/projectsImages/framemobile.png";
 
 import classes from "./About.module.css";
+import { height } from "@mui/system";
 
 const Info = () => {
   const [deviceSize, changeDeviceSize] = useState(window.innerWidth);
