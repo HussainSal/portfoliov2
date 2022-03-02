@@ -2,6 +2,7 @@
   margin: auto;
   position: relative;
   overflow-x: hidden;
+  /* display: flex; */
 }
 
 .flex {
@@ -23,6 +24,19 @@
 
 .about {
   margin-bottom: 200px;
+}
+
+.loader {
+  margin-top: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  /* overflow-x: hidden; */
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /* @media (max-width: 1464px) {

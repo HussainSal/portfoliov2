@@ -1,16 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../App.css";
 import { Typography } from "@material-ui/core";
 import Projectcontainerleft from "../Projectcontainer/Projectcontainerleft";
 import { projectData } from "../../assets/projectText";
 import classes from "./Work.module.css";
 import Light from "../Light/Light";
+import gsap from "gsap";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { PixiPlugin } from "gsap/PixiPlugin";
+
+gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 
 const Work = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      "#latestWork",
+      {
+        x: "-45vw",
+        scale: 0.6,
+      },
+      { delay: 0.5, x: "0vw", duration: 2, scale: 1, yoyo: true, ease: "back" }
+    );
+  }, []);
+
   return (
     <section id="work" className="section work">
       <div className="mainContainer">
-        <Typography className={`${classes.heading} styledText`} variant="h3">
+        <Typography
+          id="latestWork"
+          className={`${classes.heading} styledText`}
+          variant="h3"
+        >
           Latest Work
         </Typography>
         <Light top="30%" left="90%" blur="blur(500px)" />

@@ -9,45 +9,50 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { PixiPlugin } from "gsap/PixiPlugin";
 
 gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
-
 const Header = () => {
   const [mouseOver, setMouseOver] = useState(false);
 
-  // useEffect(() => {
-  //   gsap.fromTo(
-  //     "#frontendText",
-  //     {
-  //       y: 0,
-  //       scale: 0.8,
-  //     },
-  //     {
-  //       y: "-1vw",
-  //       duration: 2,
-  //       scale: 1,
-  //       yoyo: true,
-  //       ease: "back",
-  //     }
-  //   );
-  // }, [mouseOver]);
+  useEffect(() => {
+    gsap.fromTo(
+      "#headingText",
+      {
+        x: "-65vw",
+        scale: 0.6,
+      },
+      { delay: 0.3, x: "0vw", duration: 2, scale: 1, yoyo: true, ease: "back" }
+    );
+    gsap.fromTo(
+      "#headingText1",
+      {
+        x: "-65vw",
+        scale: 0.6,
+      },
+      { delay: 0.5, x: "0vw", duration: 2, scale: 1, yoyo: true, ease: "back" }
+    );
+    gsap.fromTo(
+      "#headingText2",
+      {
+        x: "-65vw",
+        scale: 0.6,
+      },
+      { delay: 0.7, x: "0vw", duration: 2, scale: 1, yoyo: true, ease: "back" }
+    );
+  }, []);
 
   return (
     <header className={`${classes.header} section`}>
       <Light top="-10%" left="70%" blur="blur(350px)" />
       <div className={`${classes.mainHeading} mainContainer`}>
-        <Typography variant="h3" color="secondary">
+        <Typography id="headingText" variant="h3" color="secondary">
           Hello!
         </Typography>
-        <Typography variant="h2" color="primary">
+        <Typography id="headingText1" variant="h2" color="primary">
           Salman Hussain
         </Typography>
 
-        <div
-          className={classes.animation}
-          onMouseEnter={() => setMouseOver(!mouseOver)}
-          // onMouseLeave={() => setMouseOver(false)}
-        >
+        <div id="headingText2" className={classes.animation}>
           <Typography id="frontendText" variant="h1" className="styledText">
-            frontend developer.
+            Frontend developer
           </Typography>
         </div>
       </div>

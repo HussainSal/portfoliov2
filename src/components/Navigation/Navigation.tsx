@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./Navigation.module.css";
 import { Button, Typography } from "@material-ui/core";
 import "../../App.css";
 import SocialAccounts from "./SocialAccounts";
+import { gsap } from "gsap";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { PixiPlugin } from "gsap/PixiPlugin";
+
+gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 
 const scrollintoview = (cur: string) => {
   document.getElementById(cur)?.scrollIntoView({ behavior: "smooth" });
@@ -10,10 +15,29 @@ const scrollintoview = (cur: string) => {
 
 const navOptions = ["work", "about me", "contact"];
 const Navigation = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      "#navOptions",
+      {
+        y: "-35vw",
+        scale: 0.6,
+      },
+      { delay: 0.5, y: "0vw", duration: 2, scale: 1, yoyo: true, ease: "back" }
+    );
+    gsap.fromTo(
+      "#socialAccounts",
+      {
+        y: "-35vw",
+        scale: 0.6,
+      },
+      { delay: 0.5, y: "0vw", duration: 2, scale: 1, yoyo: true, ease: "back" }
+    );
+  }, []);
+
   return (
     <nav>
       <div className={`${classes.nav} flex mainContainer`}>
-        <div className={`${classes.navOptions} flex`}>
+        <div id="navOptions" className={`${classes.navOptions} flex`}>
           {navOptions.map((cur) => {
             return (
               <Button
@@ -33,7 +57,9 @@ const Navigation = () => {
             <Typography variant="body2">Resume</Typography>
           </Button>
         </div>
-        <SocialAccounts className="" />
+        <div id="socialAccounts">
+          <SocialAccounts className="" />
+        </div>
       </div>
     </nav>
   );
