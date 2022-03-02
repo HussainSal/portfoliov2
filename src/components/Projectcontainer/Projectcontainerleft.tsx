@@ -15,7 +15,7 @@ const Projectcontainerleft: React.FC<{
   return (
     <div className="mainContainer">
       <div className={`${classes.Projectcontainer} ${props.class}  `}>
-        <div className={classes.imageBox}>
+        <div id="imageContainer" className={classes.imageBox}>
           <img src={props.image} className={classes.image} alt="" />
         </div>
         <div className={`${classes.textbox} ${classes.textboxLeft}`}>

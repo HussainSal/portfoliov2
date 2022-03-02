@@ -6,6 +6,7 @@ import SocialAccounts from "./SocialAccounts";
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { PixiPlugin } from "gsap/PixiPlugin";
+import { useAppContext } from "../../store/authContext";
 
 gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 
@@ -15,24 +16,41 @@ const scrollintoview = (cur: string) => {
 
 const navOptions = ["work", "about me", "contact"];
 const Navigation = () => {
-  useEffect(() => {
-    gsap.fromTo(
-      "#navOptions",
-      {
-        y: "-35vw",
-        scale: 0.6,
-      },
-      { delay: 0.5, y: "0vw", duration: 2, scale: 1, yoyo: true, ease: "back" }
-    );
-    gsap.fromTo(
-      "#socialAccounts",
-      {
-        y: "-35vw",
-        scale: 0.6,
-      },
-      { delay: 0.5, y: "0vw", duration: 2, scale: 1, yoyo: true, ease: "back" }
-    );
-  }, []);
+  const ctx = useAppContext();
+
+  ctx.deviceSize > 850 &&
+    useEffect(() => {
+      gsap.fromTo(
+        "#navOptions",
+        {
+          y: "-35vw",
+          scale: 0.6,
+        },
+        {
+          delay: 1,
+          y: "0vw",
+          duration: 2,
+          scale: 1,
+          yoyo: true,
+          ease: "back",
+        }
+      );
+      gsap.fromTo(
+        "#socialAccounts",
+        {
+          y: "-35vw",
+          scale: 0.6,
+        },
+        {
+          delay: 1,
+          y: "0vw",
+          duration: 2,
+          scale: 1,
+          yoyo: true,
+          ease: "back",
+        }
+      );
+    }, []);
 
   return (
     <nav>

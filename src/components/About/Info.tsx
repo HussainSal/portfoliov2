@@ -1,25 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Typography } from "@material-ui/core";
 import img1 from "../../assets/projectsImages/frame.png";
 import img2 from "../../assets/projectsImages/framemobile.png";
+import { useAppContext } from "../../store/authContext";
 
 import classes from "./About.module.css";
 
 const Info = () => {
-  const [deviceSize, changeDeviceSize] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const resizeW = () => changeDeviceSize(window.innerWidth);
-
-    window.addEventListener("resize", resizeW); // Update the width on resize
-
-    return () => window.removeEventListener("resize", resizeW);
-  }, [deviceSize]);
+  const ctx = useAppContext();
 
   return (
     <div className={classes.aboutmeContainer}>
       <img
-        src={deviceSize > 600 ? img1 : img2}
+        src={ctx.deviceSize > 600 ? img1 : img2}
         className={classes.image}
         alt=""
       />

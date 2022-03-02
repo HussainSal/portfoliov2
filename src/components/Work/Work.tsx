@@ -8,20 +8,31 @@ import Light from "../Light/Light";
 import gsap from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { PixiPlugin } from "gsap/PixiPlugin";
+import { useAppContext } from "../../store/authContext";
 
 gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 
 const Work = () => {
-  useEffect(() => {
-    gsap.fromTo(
-      "#latestWork",
-      {
-        x: "-45vw",
-        scale: 0.6,
-      },
-      { delay: 0.5, x: "0vw", duration: 2, scale: 1, yoyo: true, ease: "back" }
-    );
-  }, []);
+  const ctx = useAppContext();
+
+  ctx.deviceSize > 850 &&
+    useEffect(() => {
+      gsap.fromTo(
+        "#latestWork",
+        {
+          x: "-65vw",
+          scale: 0.6,
+        },
+        {
+          delay: 0.5,
+          x: "0vw",
+          duration: 2,
+          scale: 1,
+          yoyo: true,
+          ease: "back",
+        }
+      );
+    }, []);
 
   return (
     <section id="work" className="section work">
