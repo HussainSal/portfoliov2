@@ -75,9 +75,7 @@ const Navigation = () => {
             <Typography variant="body2">Resume</Typography>
           </Button>
         </div>
-        <div id="socialAccounts">
-          <SocialAccounts className="" />
-        </div>
+         <SocialAccounts id="socialAccounts"  className={classes.socialMediaOptions} />
       </div>
     </nav>
   );

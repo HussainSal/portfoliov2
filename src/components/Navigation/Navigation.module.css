@@ -31,6 +31,12 @@
   transform: translateY(-5px);
 }
 
+
+.socialMediaOptions {
+  display: block;
+  display: flex;
+}
+
 @media (max-width: 1464px) {
   .navOptions {
     padding-left: 50px;

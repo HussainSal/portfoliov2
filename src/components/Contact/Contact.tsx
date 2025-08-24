@@ -33,7 +33,7 @@ const Contact = () => {
       <div className={classes.copyrightContainer}>
         <div className={classes.border} />
         <Typography color="primary" className={classes.rights} variant="body2">
-          2022 - All rights reserved
+          {new Date().getFullYear()} - All rights reserved
         </Typography>
       </div>
     </section>

@@ -23,7 +23,7 @@ const Info = () => {
             {"{"}
           </Typography>
           <Typography variant="body1" color="primary">
-            <span className={classes.property}>Profession:</span> Developer
+            <span className={classes.property}>Profession:</span> Full Stack Engineer
           </Typography>
           <Typography variant="body1" color="primary">
             {"}"}
@@ -63,8 +63,8 @@ const Info = () => {
             className={classes.skillText}
             color="primary"
           >
-            Html5, Css, Javascript, Typescript, GSAP, React, Material-UI,{" "}
-            {<br />} Redux, NextJs, RestAPI, Firebase
+            Html5, Css, Javascript, Typescript, GSAP, React,Node.js,Nest.js,
+            Postgres, {<br />} MongoDB , Supabase , Airtable,SQL, Material-UI, Redux, {<br />} NextJs, RestAPI, Firebase, AWS
           </Typography>
           <Typography variant="body1" color="primary">
             {"]"}

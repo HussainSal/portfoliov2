@@ -76,7 +76,7 @@ const Header = () => {
 
         <div id="headingText2" className={classes.animation}>
           <Typography id="frontendText" variant="h1" className="styledText">
-            Frontend developer
+            Full Stack Engineer
           </Typography>
         </div>
       </div>
