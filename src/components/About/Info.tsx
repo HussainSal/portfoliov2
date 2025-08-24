@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import img1 from "../../assets/projectsImages/frame.png";
 import img2 from "../../assets/projectsImages/framemobile.png";
 import { useAppContext } from "../../store/authContext";

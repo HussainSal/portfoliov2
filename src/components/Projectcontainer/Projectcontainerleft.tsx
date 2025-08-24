@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./Projectcontainer.module.css";
 import "../../App.css";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { Link } from "@material-ui/core";
+import { Link } from "@mui/material";
 
 const Projectcontainerleft: React.FC<{
   name: string;

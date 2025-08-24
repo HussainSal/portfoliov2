@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import classes from "./Navigation.module.css";
-import { Button, Typography } from "@material-ui/core";
+import { Button, Typography } from "@mui/material";
 import "../../App.css";
 import SocialAccounts from "./SocialAccounts";
 import { gsap } from "gsap";

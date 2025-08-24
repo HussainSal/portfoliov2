@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import classes from "./Header.module.css";
 import Light from "../Light/Light";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import "../../App.css";
 
 import { gsap } from "gsap";

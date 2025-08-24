@@ -1,6 +1,6 @@
 import React from "react";
 import "../../App.css";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import Info from "./Info";
 import classes from "./About.module.css";
 import Light from "../Light/Light";

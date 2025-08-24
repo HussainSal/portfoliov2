@@ -4,7 +4,7 @@ import Github from "../../assets/icons/Github";
 import Linkedin from "../../assets/icons/Linkedin";
 import Twitter from "../../assets/icons/Twitter";
 import "../../App.css";
-import { Link } from "@material-ui/core";
+import { Link } from "@mui/material";
 
 const SocialAccounts: React.FC<{ className: string , id?:string }> = (props) => {
   return (
